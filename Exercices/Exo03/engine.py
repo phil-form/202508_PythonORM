@@ -17,9 +17,15 @@ Base.metadata.create_all(engine)
 with Session(engine) as session:
     user = User(name="qwer")
     actor = Acteur(nom="qwerasdf")
+    actor2 = Acteur(nom="qwerasdf")
+    actor3 = Acteur(nom="qwerasdf")
+    actor4 = Acteur(nom="qwerasdf")
     film = Film(titre="poiqwe", annee=2025)
 
     film.acteurs.append(actor)
+    film.acteurs.append(actor2)
+    film.acteurs.append(actor3)
+    film.acteurs.append(actor4)
     user.films.append(film)
 
     session.add_all(
@@ -27,6 +33,9 @@ with Session(engine) as session:
     )
 
     session.commit()
+
+    for act in film.acteurs:
+        print(act.nom)
 
 
 
