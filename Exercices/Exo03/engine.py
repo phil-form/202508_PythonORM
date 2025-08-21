@@ -21,7 +21,6 @@ with Session(engine) as session:
 
     film.acteurs.append(actor)
     user.films.append(film)
-    
 
     session.add_all(
         [film, actor, user]

@@ -4,6 +4,7 @@ from Models.user import User
 from Models.role import Role
 from Models.BasketItem import BasketItem
 from Models.user_roles import user_roles
+from Models.Item import Item
 from Models.Base import Base
 
 engine = create_engine(url='sqlite:///myfile.db', echo=True)
