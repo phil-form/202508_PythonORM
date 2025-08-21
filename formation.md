@@ -28,7 +28,7 @@ id: Mapped[int] = mapped_column(primary_key=True)
 
 Crée un champ username d'une longueur max de 50 et avec le flag unique
 
-username: Mapped[str] = mapped_column(length=50, unique=True)
+username: Mapped[String] = mapped_column(String(50), unique=True)
 ```python
 from sqlalchemy.orm import Mapped
 from sqlalchemy.testing.schema import mapped_column
