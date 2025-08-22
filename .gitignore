@@ -1,7 +1,18 @@
 ## Custom 
 
+# je dis d'ignorer les fichiers portant le nom suivant
 myfile.db
 database.db
+
+# Je vais lui dire d'ignorer tous les fichiers .db
+*.db
+
+### VisualStudioCode ###
+# J'ignore tout le contenu du dossier .vscode
+.vscode/*
+# Ici je précise que je ne veux pas ignorer le fichier launch.json
+# dans le .vscode
+!.vscode/launch.json
 
 # Created by https://www.toptal.com/developers/gitignore/api/venv,python,visualstudiocode,pycharm
 # Edit at https://www.toptal.com/developers/gitignore?templates=venv,python,visualstudiocode,pycharm
@@ -298,10 +309,6 @@ pyrightconfig.json
 [Ss]cripts
 pyvenv.cfg
 pip-selfcheck.json
-
-### VisualStudioCode ###
-.vscode/*
-!.vscode/launch.json
 
 
 # Local History for Visual Studio Code
