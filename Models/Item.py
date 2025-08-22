@@ -8,5 +8,7 @@ class Item(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(255), nullable=False)
     price = Column(Float, nullable=False)
+    stock = Column(Integer, nullable=True)
+    weight = Column(Float, nullable=True)
 
     basket_items = relationship('BasketItem', back_populates='item')

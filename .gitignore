@@ -2,3 +2,4 @@
 .venv/*
 
 myfile.db
+database.db
